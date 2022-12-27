@@ -34,7 +34,7 @@ const setData = () => {
     document.querySelector('.gallery .container').innerHTML = `
         <div>
             <img src="https://audiophile-api.onrender.com/UPLOADS/${product.photos[1].filename}" alt="">
-            <img src="https://audiophile-api.onrender.com//UPLOADS/${product.photos[2].filename}" alt="">
+            <img src="https://audiophile-api.onrender.com/UPLOADS/${product.photos[2].filename}" alt="">
         </div>
         <img src="https://audiophile-api.onrender.com/UPLOADS/${product.photos[3].filename}" alt="">
     `

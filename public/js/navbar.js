@@ -25,7 +25,7 @@ const setOrdersInTheBox = () => {
     </div>
     ${allOrders.map((elt , index) => `
         <div class="product_card">
-            <img src="http://localhost:3001/UPLOADS/${elt[0].photos[0].filename}" alt="">
+            <img src="https://audiophile-api.onrender.com/UPLOADS/${elt[0].photos[0].filename}" alt="">
             <div>
                 <h3>${elt[0].name.slice(0 , 10)}</h3>
                 <p>$ ${elt[0].price}<span class="number">x${elt[1]}</span></p>

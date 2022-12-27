@@ -7,7 +7,7 @@ const setData = () => {
     document.querySelector('#category_products .container').innerHTML = bycategory.map(elt => `
         <div class="product">
             <div class="image">
-                <img src="http://localhost:3001/UPLOADS/${elt.photos[0].filename}" alt="">
+                <img src="https://audiophile-api.onrender.com/UPLOADS/${elt.photos[0].filename}" alt="">
             </div>
             <div class="content">
                 ${elt.new?`<h4>new product</h4>`:``}

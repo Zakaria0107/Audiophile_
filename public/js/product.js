@@ -6,7 +6,7 @@ const product = data.filter(elt => elt._id == id)[0]
 const setData = () => {
     document.querySelector('#product_header .product').innerHTML = `
         <div class="image">
-        <img src="http://localhost:3001/UPLOADS/${product.photos[0].filename}" alt="">
+        <img src="https://audiophile-api.onrender.com/UPLOADS/${product.photos[0].filename}" alt="">
         </div>
         <div class="content">
             ${product.new?`<h4>new product</h4>`:``}
@@ -33,10 +33,10 @@ const setData = () => {
 
     document.querySelector('.gallery .container').innerHTML = `
         <div>
-            <img src="http://localhost:3001/UPLOADS/${product.photos[1].filename}" alt="">
-            <img src="http://localhost:3001/UPLOADS/${product.photos[2].filename}" alt="">
+            <img src="https://audiophile-api.onrender.com/UPLOADS/${product.photos[1].filename}" alt="">
+            <img src="https://audiophile-api.onrender.com//UPLOADS/${product.photos[2].filename}" alt="">
         </div>
-        <img src="http://localhost:3001/UPLOADS/${product.photos[3].filename}" alt="">
+        <img src="https://audiophile-api.onrender.com/UPLOADS/${product.photos[3].filename}" alt="">
     `
 
 }

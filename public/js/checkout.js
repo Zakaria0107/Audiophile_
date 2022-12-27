@@ -7,7 +7,7 @@ const setCheckoutOrders = () => {
     document.querySelector("#checkout_cards").innerHTML += `
         ${allOrders.map(elt => `
             <div class="card">
-                <img src="http://localhost:3001/UPLOADS/${elt[0].photos[0].filename}" alt="">
+                <img src="https://audiophile-api.onrender.com/UPLOADS/${elt[0].photos[0].filename}" alt="">
                 <div>
                     <h2>${elt[0].name.slice(0 , 10)}</h2>
                     <p>$ ${elt[0].price}</p>
@@ -47,7 +47,7 @@ document.querySelector("#send").onclick = () => {
         country : document.querySelector("#country").value ,
         orders : JSON.stringify(allOrders)
     }
-    axios.post(`http://localhost:3001/api/order/`,info)
+    axios.post(`https://audiophile-api.onrender.com/api/order/`,info)
         .then(() => {
             swal("Good job!", "", "success").then(() => window.location.reload() )
         })
